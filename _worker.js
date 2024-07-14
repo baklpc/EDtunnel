@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://sub.kaiche.tk/sub?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
+						const url = `https://moistr.freenods.sbs/free?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
